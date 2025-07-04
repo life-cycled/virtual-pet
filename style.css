@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jua&display=swap');
+
+.wrapper {
+    background: #FFE4D9;
+}
+
+.mainUI {
+    position: absolute;
+    width: 700px;
+    height: 829px;
+    left: calc(50% - 700px/2);
+    top: calc(50% - 829px/2);
+    background: #FFF4E8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 35px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    column-gap: 16px;
+    justify-content: center;
+}
+
+.title {
+    color: #000;
+    font-family: "Jua", sans-serif;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.mochi {
+    width: 560px;
+    height: 448px;
+}
+.sprite {
+    width: 80px;
+    height: 64px;
+    background: url('Sprites/IDLE.png') left center;
+    background-repeat: no-repeat;
+    animation: idle 0.8s steps(8) infinite;
+    transform: scale(7);
+    transform-origin: top left;
+    image-rendering: pixelated;
+    display:block;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+@keyframes idle {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -640px;
+    }
+}
+
+.needsBars {
+    display: flex;
+    width: 467px;
+    height: 154px;
+    flex-direction: column;
+    gap: 11px;
+    margin: auto;
+}
+.needsBars p {
+    color: #000;
+    font-family: Jua;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.needsBar {
+    display: flex;
+    width: 467px;
+    height: 44px;
+    justify-content: right;
+    align-items: center;
+    gap: 72px;
+}
+
+.bar {
+    width: 286px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FAE8D8;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 472px;
+    margin: auto;
+    padding: 40px;
+}
+
+button {
+    width: 140px;
+    height: 55px;
+    border-radius: 25px;
+    background: #E9CECE;
+    color: #000;
+    font-family: Jua;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
