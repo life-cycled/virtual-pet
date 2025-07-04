@@ -15,26 +15,32 @@
                     <p style="margin: 0px;">Mochi the Kitty</p>
                 </div>
                 <div class="mochi">
-                    <div class="sprite"></div>
+                    <div id="sprite"></div>
                 </div>
                 <div class="needsBars">
                     <div class="needsBar">
                         <p>Hunger</p>
-                        <div class="bar"></div>
+                        <div class="bar">
+                            <div id="hungerBar"></div>
+                        </div>
                     </div>
                     <div class="needsBar">
                         <p>Happiness</p>
-                        <div class="bar"></div>
+                        <div class="bar">
+                            <div id="happinessBar"></div>
+                        </div>
                     </div>
                     <div class="needsBar">
                         <p>Energy</p>
-                        <div class="bar"></div>
+                        <div class="bar">
+                            <div id="energyBar"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="buttons">
-                    <button onclick="feed">Feed</button>
-                    <button onclick="play">Play</button>
-                    <button onclick="sleep">Sleep</button>
+                    <button onclick="changeSpriteState('eat');feed();">Feed</button>
+                    <button onclick="changeSpriteState('play');play();">Play</button>
+                    <button onclick="changeSpriteState('sleep');sleep();">Sleep</button>
                 </div>
             </div>
         </div>

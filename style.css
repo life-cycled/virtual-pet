@@ -38,7 +38,7 @@
     width: 560px;
     height: 448px;
 }
-.sprite {
+#sprite {
     width: 80px;
     height: 64px;
     background: url('Sprites/IDLE.png') left center;
@@ -51,6 +51,20 @@
     margin-left: 70px;
     margin-right: 70px;
 }
+#sprite.eat {
+    background: url('Sprites/EAT.png') left center;
+    animation: eat 0.8s steps(7);
+}
+
+#sprite.sleep {
+    background: url('Sprites/SLEEP.png') left center;
+    animation: sleep 0.8s steps(8);
+}
+
+#sprite.play {
+    background: url('Sprites/ATTACK\ 2.png') left center;
+    animation: play 0.8s steps(9);
+}
 
 @keyframes idle {
     from {
@@ -58,6 +72,33 @@
     }
     to {
         background-position: -640px;
+    }
+}
+
+@keyframes eat {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -560px;
+    }
+}
+
+@keyframes sleep {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -640px;
+    }
+}
+
+@keyframes play {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -720px;
     }
 }
 
@@ -93,6 +134,13 @@
     flex-shrink: 0;
     border-radius: 20px;
     background: #FAE8D8;
+}
+
+#hungerBar, #happinessBar, #energyBar {
+    width: 10px;
+    height: 32px;
+    border-radius: 20px;
+    background: #f7bbbb;
 }
 
 .buttons {
